@@ -1,0 +1,345 @@
+     /* CSS RESET */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+  /* ALL BOX HEIGHT SET HERE */
+.box{
+    height: 100vh;
+}
+
+#box1{
+    height: 90vh;
+}
+
+  /* THIS IS FRONTPAGE NAVBAR SECTION */
+
+ #navbar{
+    height: 10vh;
+    background-color: white;
+      
+    /* THIS PORTION ADDED AFTER REALIZING THIS I HAVE WRITTER 2TIMES NAVBAR BY MISTAKE */
+    position: sticky;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 120px;
+    top: 0;
+    z-index: 9999;
+}
+
+  /* THIS IS THE LOGO */
+#logo img{
+    width: 170px;
+}
+    /* THIS SECTION IS NO LONGER NEEDED */
+/* #navbar{
+    height: 10vh;
+    background-color: white;
+
+    position: sticky;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 120px;
+    top: 0;
+    z-index: +1;
+
+} */
+
+  /* THESE ARE HOME ABOUT SERVICES ... ETC */
+
+#navElements{
+    display: flex;
+    gap: 40px;
+}
+#navElements  li{
+    list-style: none;
+}
+#navElements  li a{
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1.1rem;
+    color: #000;
+}
+
+    /* THIS IS THE WHOLE SIGN IN PORTION */
+
+    #signIn{
+        cursor: pointer;
+        height: 10vh;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    }
+    
+#sign{
+    display: flex;
+    gap: 10px;
+    padding: 12px 16px;
+    background-color: rgb(104, 220, 104);
+    color: white;
+    border-radius: 4px;
+}
+#sign h2{
+    font-size: 1.2rem;
+    color: white;
+}
+
+#list{
+    display: flex;
+    gap: 10px;
+}
+
+#heart{
+    font-size: 1.2rem;
+    color: rgb(127, 239, 127);
+    font-weight: 600;
+}
+
+
+  /* THE WHOLE UPPER PORTION WRITTER TO CREATE THE NAVBAR */
+
+    /* THIS IS THE FRONTPAGE BACKGROUND AND ADVANCE FILTER SECTION */
+   
+#box1 #first{
+    position: relative;
+    height: 90vh;
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 12rem;
+}
+#box1 #first::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    background: url('FrontPage/banner.png') no-repeat center center/cover;
+    z-index: -1;
+
+}
+
+
+
+#box1 #first #firstHeading h2{
+    font-size: 4.2rem;
+    letter-spacing: 1px;
+    word-spacing: 5px;
+    color: white;
+}
+
+#box1 #first #firstHeading h4{
+    font-size: 1.2rem;
+    color: rgb(160, 152, 152);
+    text-align: center;
+}
+
+#searchSection{
+    height: 6rem;
+    width: 80%;
+    display: flex; 
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 4rem;
+    margin-top: 2rem;
+    background-color: white;
+    border-radius: 4px;
+}
+
+.inputSection{
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+.inputSection input{
+    padding: 2px 6px;
+    height: 2rem;
+    width: 15rem;
+    font-weight: 500;
+    color: #000;
+    font-size: 1.1rem;
+    outline: none;
+}
+
+.inputSection input::placeholder{
+    font-weight: 500;
+    color: #000;
+    font-size: 1.1rem;
+}
+
+#filter{
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 40px;
+}
+#filter h3{
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+#filter .fa-magnifying-glass{
+    padding: 16px 30px;
+    background-color: green;
+    color: white;
+    font-size: 1.3rem;
+    border-radius: 8px;
+}
+
+  /* FORNT PAGE BACKGROUND A SEARCH SECTION ENDS HERE MAYBE SOMEDAY I HAVE TO LEAEN EFFICIENT CODING */
+
+    /* HERE STARTS OUR SECOND PAGE SO LETS TRY TO MAKE THIS EFFICIENT */
+
+
+#box2{
+    position: relative;
+    height: 70vh;
+    background-color:azure;
+    display: flex;
+    justify-content:flex-start;
+    padding-top: 40px;
+    align-items: center;
+    flex-direction: column;
+
+
+}
+#box2 h2{
+    padding-top: 40px;
+    font-size: 2.8rem;
+    color: #2d3954;
+}
+#box2 h3{
+    color: gray;
+}
+
+.container{
+    width: 100%;
+    padding-top:40px ;
+    display: grid;
+    /* grid-template-columns: repeat(5,180px); */
+    /* grid-template-rows: minmax(180px,180px); */
+    grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+    padding: 0px 100px;
+    padding-top:80px ;
+    gap: 40px;
+}
+
+.grid{
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 180px;
+    width: 200px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 8px;
+    box-shadow: 0 0 20px 0 rgb(112 121 138 / 18%);
+}
+.grid h4{
+    padding-top: 10px;
+    font-weight: 500;
+}
+
+.grid p{
+    color: #2d3954;
+    font-size: 14px;
+}
+
+.grid img{
+    height: 65px;
+    width: 65px;
+}
+
+
+ /* BOX 2 ENDS HERE */
+
+
+
+
+
+
+#box3{
+    height: 200vh;
+    position: relative;
+    background-color:aliceblue;
+    border-top:1px solid rgb(193, 181, 181);
+    text-align: center;
+    padding-top: 50px;
+    
+}
+
+#box3 .gridContainer{
+
+    padding: 80px 100px;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(400px,1fr));
+    gap: 40px;
+
+}
+
+
+#box3 .gridContainer .gridBox{
+    height: 480px;
+    width: 400px;
+    /* border: 2px solid red; */
+    box-shadow: 0 0 20px 0 rgb(112 121 138 / 18%);
+
+}
+
+#box3 .gridContainer .gridBox img{
+    height: 250px;
+    width: 400px;
+}
+
+  .location{
+    height: 140px;
+    background-color:azure;
+  }
+
+  .location .rentSale{
+    padding: 20px 30px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .location .rentSale h3{
+    background: rgba(255, 152, 0, 0.1);
+    color: rgb(255, 152, 0);
+    padding: 4px 15px;
+    border-radius: 4px;
+  }
+
+  .location .rentSale .fa-heart{
+    font-size: 1.6rem;
+    color: gray;
+    cursor: pointer;
+  }
+
+  .pricing{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+    height: 90px;
+    border-top: 1px solid black;
+    
+  }
+
+  .pricing .price .value{
+    padding: 10px 20px;
+    background-color: #27ae60;
+    color: white;
+    font-size: 1.3rem;
+    border-radius: 30px;
+  }
