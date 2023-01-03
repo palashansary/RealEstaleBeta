@@ -399,7 +399,7 @@
     
     
     #box3 .gridContainer .gridBox{
-        height: 230px;
+        height: 240px;
         width: 150px;
         /* border: 2px solid red; */
         box-shadow: 0 0 20px 0 rgb(112 121 138 / 18%);
@@ -449,8 +449,8 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 10px 10px;
-        height: 30px;
+        padding: 6px 10px;
+        height: 40px;
         border-top: 1px solid black;
         
       }
