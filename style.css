@@ -215,11 +215,12 @@
 
 #box2{
     position: relative;
-    height: 70vh;
-    background-color:azure;
+    height: 100%;
+    background-color:white;
     display: flex;
     justify-content:flex-start;
-    padding-top: 40px;
+    padding: 40px 0px;
+    padding-bottom: 100px;
     align-items: center;
     flex-direction: column;
 
@@ -254,9 +255,15 @@
     align-items: center;
     height: 180px;
     width: 200px;
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(255, 253, 253);
+    border: 1px solid gray;
     border-radius: 8px;
-    box-shadow: 0 0 20px 0 rgb(112 121 138 / 18%);
+    box-shadow: 1px 1px 2px gray;
+}
+
+.grid:hover{
+    transition: all 0.6s ease-in-out;
+    transform: scale(1.2);
 }
 .grid h4{
     padding-top: 10px;
@@ -282,23 +289,23 @@
 
 
 #box3{
-    height: 200vh;
+    height: 100%;
     position: relative;
-    background-color:aliceblue;
-    border-top:1px solid rgb(193, 181, 181);
+    background-color:white;
+    /* border-top:1px solid rgb(193, 181, 181); */
     text-align: center;
-    padding-top: 50px;
+    padding: 50px 0px;
     
 }
 
  #box3 h1{
-    font-size: 2.8rem;
+    font-size: 3.4rem;
     color: #2d3954;
  }
 
  #box3 p{
     padding-top: 15px;
-    color: grey;
+    color:gray;
     font-size: 18px;
  }
 
@@ -317,7 +324,7 @@
     height: 480px;
     width: 400px;
     /* border: 2px solid red; */
-    box-shadow: 0 0 20px 0 rgb(112 121 138 / 18%);
+    box-shadow: 1px 1px 4px grey;
 
 }
 
@@ -367,3 +374,339 @@
     font-size: 1.3rem;
     border-radius: 30px;
   }
+
+   /* END OF 3RD PAGE */
+
+
+   /* Here Starts our award section */
+
+   .awardSection{
+    height: 100%;
+    background-color: #122947;
+    text-align: center;
+    padding: 6rem 0;
+   }
+
+    .awardSection p{
+    color: #27ae60;
+    font-size: 30px;
+   } 
+   
+   .awardSection h1{
+    padding-top: 10px;
+    color: #fff;
+    font-size: 36px;
+    font-weight: 400;
+   }
+   .awardcontainer{
+    margin-top: 5rem;
+    display: flex;
+    gap: 10rem;
+    justify-content: center;
+    align-items: center;
+   }
+
+  .awardIcon{
+     font-size: 46px;
+     color: #fff;
+     background: hsla(0,0%,100%,.1);
+     border-radius: 4% 50%;
+     /* height: 100px;
+     width: 100px; */
+     padding: 40px 40px;
+}
+
+.award h2{
+    font-size: 50px;
+    color: #fff;
+}
+
+.award h3{
+    color: grey;
+}
+  
+  
+
+   /* END OF AWARD SECTION */
+
+   /* START OF EXPLORE BY LOCATION SECTION */
+
+   .explore{
+    height: 100%;
+    background-color:white;
+    padding: 5rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   }
+
+   .explore h2{
+    font-size: 2.6rem;
+   }
+
+   .explore p{
+    padding-top: 10px;
+    color: #72809d;
+    font: 1.2em sans-serif;
+   }
+
+   .exploreBox{
+    position: relative;
+    margin-top: 2rem;
+    padding: 2rem 2rem;
+    /* border: 2px solid red; */
+    height: 100%;
+    width: 100%;
+    display: grid;
+    gap: 40px;
+    grid-template-columns: repeat(auto-fit,minmax(360px,1fr));
+   }
+
+   
+   .exploreItem
+   {     position: relative;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 260px;
+          width: 420px;
+          border-radius: 8px;
+          box-shadow: 1px 1px 8px grey;
+   }
+
+   .exploreItem::before{
+    content: "";
+    position: absolute;
+    height: 85%;
+    width: 85%;
+    top: 0;
+    left: 0;
+    background-color:rgba(15,28,47,.3);
+    opacity: 1;
+    margin: 20px 24px;
+    border-radius: 4px;
+   }
+
+ 
+
+   .h2{
+    position: absolute;
+   }
+
+   .h2 h5{
+    font-size: 1.5rem;
+    color: #fff;
+    text-shadow: 1px 1x 2px black;
+    z-index: +2;
+   }
+
+   .h2 .para{
+    display: flex;
+    gap: 15px;
+   
+   }
+
+   .h2 .para p{
+    font-size: 0.8rem;
+    color: #fff;
+   }
+
+
+
+   .exploreItem img
+    {
+    height: 260px;
+    width: 420px;
+    border-radius: 8px;
+    /* opacity: 0.9; */
+
+   }
+
+      /* EXPLORE VIA LOCATION END HERE */
+
+
+        /* OUR AGENTS STARTS FROM HERE */
+
+        .agentSection{
+            height: 100%;
+            text-align: center;
+            /* padding-top: 1rem; */
+            background-color: white;
+            padding-bottom: 1rem;
+        }
+
+        .agentSection h1{
+            font-size: 3.2rem;
+            word-spacing: 6px;
+        }
+
+        .agentSection p{
+            padding-top: 10px;
+            color:#122947;
+            font-size: 1.2rem;
+            font-weight: 500;
+            
+        }
+
+        .agentBox{
+            margin-top: 2rem;
+            width: 100%;
+            height: 120Vh;
+            /* border: 1px solid red; */
+            display: grid;
+            grid-template-columns: repeat(auto-fit,minmax(400px,1fr));
+            padding: 2rem 2rem;
+        }
+
+        .agents{
+            height: 360px;
+            width: 440px;
+            border: 2px solid gray;
+            padding: 10px 10px;
+            box-shadow: 2px 2px 6px gray;
+            color:gray;
+            cursor: pointer;
+            background-color:white;
+        }
+
+        .agents .h3class{
+            text-align: left;
+            background: #ff6922;
+             border-radius: 50px;
+             color: white;
+             padding: 8px 24px;
+             width: 30%;
+        }
+
+        .agentProfile{
+         height: 70%;
+         width: 100%;
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+         align-items: center;
+        }
+
+
+      
+
+        .agentProfile img{
+            height: 100px;
+            width: 100px;border-radius: 50%;
+        }
+
+        .agentLocation{
+            height: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            /* padding-top: 10px; */
+        }
+
+        .agentLocation h3{
+            font: 1em sans-serif;
+            font-weight: bold;
+            color: rgb(44, 41, 41);
+        }
+
+        .socialMedia{
+            display: flex;
+            padding-top: 20px;
+            gap: 30px;
+        }
+
+        .socialMedia .fa-brands{
+            color: darkblue;
+            font-size: 1.4rem;
+            padding: 8px;
+            background-color: rgb(232, 226, 226);
+            border-radius: 50%;
+            
+        }
+
+        .fa-check{
+             
+            transform: translateY(-50px) translateX(50px);
+     color: white;
+     background-color: #108be7;
+     font-size: 10px;
+      padding: 5px;
+     border-radius: 50%;
+        }
+
+         /* MESSAGE AND CALLS */
+
+
+         .agentContact{
+            display: flex;
+            justify-content: space-between;
+            padding: 0 20px;
+            padding-top: 6px;
+         }
+
+         .message{
+            display: flex;
+            gap: 8px;
+            height: 55px;
+            width: 140px;
+            background-color: #27ae60;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+            font-size: 1.2rem;
+            border-radius: 8px;
+         }
+
+         .call{
+            height: 55px;
+            width: 85px;
+            color: white;
+            background-color: #000;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 8px;
+            font-size: 1.3rem;
+         }
+            
+       .pName{
+        color: #122947;
+       }
+
+       /* AGENT SECTION ENDS HERE */
+
+       /* FAQ SECTION STARTS HERE */
+
+       .faq{
+        height: 100%;
+        /* height: 200px; */
+        background-color: #19b259;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 40px 120px;
+        color: #fff;
+       }
+
+      
+
+       .question h1{
+        font-size: 2.8rem;
+       }
+       .question p{
+        font-size: 1.2rem;
+       }
+
+       .contactUs{
+             color: white;
+             background-color: white;
+             font-size: 2rem;
+             padding: 8px 16px;
+             color: #19b259;
+             border-radius: 24px;
+             cursor: pointer;
+             
+       }
