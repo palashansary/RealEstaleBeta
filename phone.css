@@ -32,15 +32,13 @@
      #navbar{
         height: 10vh;
         background-color: white;
-        position: relative;
           
         /* THIS PORTION ADDED AFTER REALIZING THIS I HAVE WRITTER 2TIMES NAVBAR BY MISTAKE */
-        /* position: relative; */
+        position: sticky;
         display: flex;
         justify-content: space-between;
-        gap: 15px;
         align-items: center;
-        padding: 0 40px;
+        padding: 0 20px;
         top: 0;
         z-index: 9999;
     }
@@ -183,10 +181,10 @@
         position: relative;
         height: 90vh;
         display: flex;
-        justify-content:flex-start;
+        justify-content:center;
         align-items: center;
         flex-direction: column;
-        padding-top: 4rem;
+        padding-top: 0rem;
     }
     #box1 #first::before{
         content: "";
@@ -195,7 +193,7 @@
         right: 0;
         height: 100%;
         width: 100%;
-        background: url('FrontPage/banner.png') no-repeat center center/cover;
+        background: url('real/FrontPage/banner.png') no-repeat center center/cover;
         z-index: -1;
     
     }
@@ -204,22 +202,24 @@
     
     #box1 #first #firstHeading h2{
         text-align: center;
-        font-size: 2rem;
+        font-size: 1.6rem;
+        padding: 0 10px;
         letter-spacing: 1px;
         word-spacing: 3px;
         color: white;
     }
     
     #box1 #first #firstHeading h4{
-        font-size: 1rem;
+        padding: 0 10px;
+        font-size: 0.8rem;
         color: rgb(160, 152, 152);
         text-align: center;
     }
     
     #searchSection{
         
-        width: 80%;
-        height: 55%;
+        /* width: 80%;
+        height: 50%; */
         display: flex; 
         flex-direction: column;
         align-items: center;
@@ -236,9 +236,10 @@
         flex-direction: column;
     }
     .inputSection input{
+        margin: 0px 0px;
         padding: 2px 6px;
-        height: 1.6rem;
-        width: 14rem;
+        height: 1.4rem;
+        width: 12rem;
         font-weight: 500;
         color: #000;
         font-size: 1.2rem;
@@ -264,7 +265,7 @@
     }
     
     #filter .fa-magnifying-glass{
-        padding: 10px 30px;
+        padding: 6px 20px;
         background-color: green;
         color: white;
         font-size: 1.3rem;
@@ -309,12 +310,12 @@
         padding-top:20px ;
      padding: 20px 0px;
         
-        display: flex;
+         display: flex;
         flex-wrap: wrap;
          justify-content:center;
         align-items: center;
-       
-    }
+        
+    } 
     
     .grid{
         cursor: pointer;
@@ -371,14 +372,14 @@
     }
 
     #box3 h1{
-        font-size: 2.8rem;
+        font-size: 2rem;
         color: #2d3954;
      }
     
      #box3 p{
         padding: 15px 10px;
         color: gray;
-        font-size: 10px;
+        font-size: 14px;
         font-weight: bold;
     
      }
@@ -386,29 +387,40 @@
     
     #box3 .gridContainer{
     
-        padding: 30px 0px;
+        padding: 30px 20px;
     
-        display: flex;
+        /* display: flex;
         flex-wrap: wrap;
         justify-content: center;
         align-items: center;
-        gap: 25px;
+        gap: 15px; */
+        gap: 30px;
+        display: flex;
+        overflow-x: scroll;
        
     
+    }
+
+    #box3 .gridContainer::-webkit-scrollbar{
+        display: none;
     }
     
     
     #box3 .gridContainer .gridBox{
-        height: 240px;
-        width: 150px;
-        /* border: 2px solid red; */
-        box-shadow: 0 0 20px 0 rgb(112 121 138 / 18%);
+        height: 300px;
+        width: 240px;
+        border-radius: 8px;
+        border: 1px solid gray;
+    
+        box-shadow: 2px 2px 2px gray;
     
     }
     
     #box3 .gridContainer .gridBox img{
-        height: 100px;
-        width: 150px;
+        height: 150px;
+        width: 240px;
+        border-radius:8px 8px 0px 0px;
+        
     }
     
       .location{
@@ -432,6 +444,21 @@
         border-radius: 4px;
       }
 
+      .location .forsale{
+        padding: 6px 10px;
+        display: flex;
+        justify-content: space-between;
+      }
+    
+
+      .forsale h3{
+        color: green;
+        background-color: #bbffd7;
+    
+        padding: 4px 15px;
+        border-radius: 4px;
+      }
+
       .location h2{
         font: 0.7em sans-serif;
         font-weight: bold;
@@ -440,7 +467,13 @@
      
     
       .location .rentSale .fa-heart{
-        font-size: 1rem;
+        font-size: 1.2rem;
+        color: gray;
+        cursor: pointer;
+      }
+
+      .location .forsale .fa-heart{
+        font-size: 1.2rem;
         color: gray;
         cursor: pointer;
       }
@@ -450,7 +483,7 @@
         justify-content: space-between;
         align-items: center;
         padding: 6px 10px;
-        height: 40px;
+        height: 50px;
         border-top: 1px solid black;
         
       }
@@ -464,9 +497,9 @@
       }
 
       .pricing h3{
-        color: red;
-        font-size: 0.6rem;
-        display: none;
+        color: black;
+        font-size: 0.8rem;
+        /* display: none; */
       }
 
 
@@ -480,12 +513,12 @@
     height: 100%;
     background-color: #122947;
     text-align: center;
-    padding: 4rem 0;
+    padding: 2rem 0;
    }
 
     .awardSection p{
     color: #27ae60;
-    font-size: 30px;
+    font-size: 24px;
    } 
    
    .awardSection h1{
@@ -499,13 +532,13 @@
     margin-top: 2rem;
     display: flex;
     flex-wrap: wrap;
-    gap: 1.8rem;
+    gap: 1.5rem;
     justify-content: center;
     align-items: center;
    }
 
   .awardIcon{
-     font-size: 32px;
+     font-size: 34px;
      color: #fff;
      background: hsla(0,0%,100%,.1);
      border-radius: 4% 50%;
@@ -515,13 +548,13 @@
 }
 
 .award h2{
-    font-size: 26px;
+    font-size: 22px;
     color: #fff;
 }
 
 .award h3{
     color: grey;
-    font-size: 1rem;
+    font-size: 0.8rem;
 }
   
    /* AWARD SECTION ENDS HERE  */
@@ -530,6 +563,7 @@
    /* START OF EXPLORE BY LOCATION SECTION */
 
    .explore{
+    width: 100%;
     height: 100%;
     background-color:white;
     padding: 3rem;
@@ -553,15 +587,24 @@
    .exploreBox{
     position: relative;
     margin-top: 1rem;
-    padding: 2rem 2rem;
+    padding: 2rem 0rem;
     /* border: 2px solid red; */
-    height: 100%;
-    width: 100%;
-    display: flex;
+    height: 240px;
+    width: 100vw;
+     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 20px; 
+    overflow-y: scroll;
+
+    
+
+   }
+
+   .exploreBox::-webkit-scrollbar{
+    margin: 0;
+    display: none;
    }
 
    
@@ -632,6 +675,7 @@
         .agentSection{
             position: relative;
             height: 100%;
+            width: 100%;
             text-align: center;
             /* padding-top: 1rem; */
             background-color: white;
@@ -653,19 +697,24 @@
 
         .agentBox{
             margin-top: 1rem;
-            width: 100%;
-            height: 100%;
+            /* width: 100%;
+            height: 100%; */
             /* border: 1px solid red; */
-           display: flex;
+           /* display: flex;
            justify-content: center;
            align-items: center;
            flex-wrap: wrap;
-           gap: 20px;
+           gap: 20px;  */
+           padding: 10px 30px;
+            display: flex;
+           gap: 30px;
+           overflow-x: scroll;
+         
         }
 
         .agents{
             height: 300px;
-            width: 280px;
+            width: 300px;
             border: 2px solid gray;
             padding: 10px 10px;
             box-shadow: 2px 2px 6px gray;
@@ -679,9 +728,9 @@
             background: #ff6922;
              border-radius: 50px;
              color: white;
-             padding: 8px 8px;
-             width: 32%;
-             font-size: 0.8rem;
+             padding: 6px 6px;
+             width: 40%;
+             font-size: 0.7rem;
         }
 
         .agentProfile{
@@ -712,7 +761,7 @@
         }
 
         .agentLocation h3{
-            font: 1em sans-serif;
+            font: 0.7em sans-serif;
             font-weight: bold;
             color: rgb(44, 41, 41);
         }
@@ -734,7 +783,7 @@
 
         .fa-check{
              
-            transform: translateY(-50px) translateX(50px);
+            transform: translateY(-50px) translateX(40px);
      color: white;
      background-color: #108be7;
      font-size: 10px;
@@ -748,7 +797,8 @@
          .agentContact{
             display: flex;
             justify-content: space-between;
-            padding: 10px 10px;
+            padding: 4px 4px;
+            gap: 10px;
             padding-top: 6px;
          }
 
@@ -756,25 +806,25 @@
             display: flex;
             gap: 4px;
             height: 30px;
-            width: 120px;
+            width: 100px;
             background-color: #27ae60;
             justify-content: center;
             align-items: center;
             color: #fff;
-            font-size: 1rem;
+            font-size: 0.8rem;
             border-radius: 8px;
          }
 
          .call{
             height: 30px;
-            width: 50px;
+            width: 40px;
             color: white;
             background-color: #000;
             display: flex;
             justify-content: center;
             align-items: center;
             border-radius: 8px;
-            font-size: 1rem;
+            font-size: 0.8rem;
          }
             
        .pName{
